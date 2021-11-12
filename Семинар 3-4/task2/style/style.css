@@ -1,0 +1,70 @@
+body{
+    background:#f2f3f7;
+    margin-top:20px;
+    }
+.m-b-30 {
+    margin-bottom: 30px;
+}
+p{
+color: #8A98AC;    
+}
+.table-borderless td {
+    border: 0 !important;
+}
+.table td {
+    color: #8A98AC;
+    vertical-align: middle;
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
+    padding: 0.6rem;
+}
+.btn-primary-rgba {
+    background-color: rgba(80, 111, 228, 0.1);
+    margin-top:20px;
+    border: none;
+    color: #506fe4;
+}
+.btn-success-rgba {
+    background-color: rgba(67, 209, 135, 0.1);
+    margin-top:20px;
+    border: none;
+    color: #43d187;
+}
+.card {
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+.list-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    margin-left: 65px;
+    padding: 10px;
+}
+
+.list-item::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -31px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4ceeb2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.list-item__name {
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.list-item__desc {
+    color: gray;
+}
+
+.list-item__date {
+    color: #595959;
+    margin-left: auto;
+}

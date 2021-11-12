@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title> Опрос по музыке </title>
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Музыка</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Новинки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Подкасты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Радио</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Детям</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+    </div>
+
+    <h1> Жанры музыки </h1>
+    <form style="background:#80d4f594; width: fit-content; padding: 10px; margin: auto; text-align: center;">
+        <br>
+        <p class="headerGoal"> Опросник для получения информации о наиболее популярной музыке </p>
+        <div class="question-part">
+            <p>
+                <label class="form-label">
+                    Имя: <input class="chbox" type="text" placeholder="Введите Ваше имя">
+                </label>
+            </p>
+            <p>
+                <label class="form-label">
+                    Фамилия: <input class="chbox" type="text" placeholder="Введите Вашу фамилию">
+                </label>
+            </p>
+            <p>
+                <label class="form-label">
+                    E-mail: <input class="chbox" type="text" placeholder="Введите email">
+                </label>
+            </p>
+
+            <div class="question-part">
+                <p class="question-text">Пол: &nbsp; <input type="radio" name="sex" value="action1"> Мужской &nbsp; <input type="radio" name="sex" value="action2"> Женский </p>
+            </div>
+
+            <p>
+                <label class="form-label">
+                    Возраст: <input class="chbox" type="number" placeholder="Введите возраст">
+                </label>
+            </p>
+
+            <p>
+                <label class="form-label">Любимый жанр музыки: </label>
+                <select aria-label="Default select example">
+                    <option selected> Рок </option>
+                    <option>Поп</option>
+                    <option>Боевик</option>
+                    <option>Рэп</option>
+                    <option>Джаз</option>
+                    <option>Шансон</option>
+                    <option>Классическая</option>
+                    <option>Народная</option>
+                    <option>Духовная</option>
+                    <option>Электронная</option>
+                </select>
+            </p>
+
+        </div>
+
+
+        <div class="question-part">
+            <p class="question-text">
+                Слушаю всё под настроение:
+                &nbsp; <input type="checkbox">
+            </p>
+        </div>
+
+        <div class="question-part">
+            <div class="question-text">
+                <p class="question-text">Список любимой музыки:</p>
+                <label>
+                    <textarea cols="37" placeholder="Введите названия"></textarea>
+                </label>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-primary">Отправить</button>
+        </p>
+    </form>
+    <br><br>
+</body>
+</html>
